@@ -5,19 +5,18 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    // component: HomeView
     component: () => import('../views/HomeView.vue')
-  }, {
-    path: '/drivers',
-    name: 'drivers',
-    component: () => import('../views/DriverView.vue')
   }, {
     path: '/schedule',
     name: 'schedule',
     component: () => import('../views/ScheduleView.vue')
   }, {
-    path: '/standing',
-    name: 'standing',
+    path: '/schedule/:round',
+    name: 'scheduleInfo',
+    component: () => import('../views/ScheduleInfoView.vue')
+  }, {
+    path: '/drivers',
+    name: 'drivers',
     component: () => import('../views/StandingView.vue')
   }, {
     path: '/team',
