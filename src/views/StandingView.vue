@@ -2,7 +2,10 @@
   <div class="standing">
     {{ standing_pilotes_list.season }}
     <div v-for="driver in standing_pilotes_list.DriverStandings" :key="driver.id">
+        {{ driver.position }}
         {{ driver.Driver.givenName }}
+        {{ driver.Driver.familyName }}
+        {{ driver.Constructors[0].name }}
     </div>
   </div>
 </template>
@@ -14,7 +17,7 @@ export default {
 
   data: () => ({
     api_url: "http://ergast.com/api/f1/",
-    api_standing: "2022/driverStandings.json",
+    api_standing: "current/driverStandings.json",
     standing_pilotes_list: [],
   }),
   mounted() {
