@@ -5,14 +5,3 @@
     </video>
   </div>
 </template>
-
-<style>
-/* .overlay {
-  background-image: rgba(0, 0, 0, 1);
-  opacity: .8;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-} */
-
-</style>
