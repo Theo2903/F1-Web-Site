@@ -1,10 +1,10 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/drivers">Drivers</router-link> |
     <router-link to="/schedule">Schedule</router-link> |
     <router-link to="/team">Team</router-link>
-  </nav>
+  </nav> -->
   <router-view/>
 </template>
 

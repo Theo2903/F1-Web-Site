@@ -11,21 +11,20 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios'
 
-export default { 
+export default {
 
   data: () => ({
-    api_url: "http://ergast.com/api/f1/",
-    api_standing: "current/driverStandings.json",
-    standing_pilotes_list: [],
+    api_url: 'http://ergast.com/api/f1/',
+    api_standing: 'current/driverStandings.json',
+    standing_pilotes_list: []
   }),
-  mounted() {
+  mounted () {
     axios.get(this.api_url + this.api_standing).then((response) => {
       this.standing_pilotes_list = response.data.MRData.StandingsTable.StandingsLists[0]
-    }); 
-  },
+    })
+  }
 }
 
 </script>
-

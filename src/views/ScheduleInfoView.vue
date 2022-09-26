@@ -28,34 +28,32 @@
         <!-- Race -->
         <a>Race</a><br>
         <a>{{ race.date }} &nbsp;</a>
-        <a>{{ race.time }}</a><br>   
-    </div>    
+        <a>{{ race.time }}</a><br>
+    </div>
 </template>
-  
 <script>
-    import axios from "axios";
-    
-    export default { 
-    
-      data: () => ({
-        api_url: "http://ergast.com/api/f1/",
-        api_schedule: "current/",
-        schedule_info: [],
-      }),
-    
-      methods: {
-    
-        go_to_raceinfo(races){
-          this.$router.push({ path: 'schedule/' + races.round})
-        },
-    
-      },
-    
-      mounted() {
-        axios.get(this.api_url + this.api_schedule + this.$route.params.round +".json").then((response) => {
-          this.schedule_info = response.data.MRData.RaceTable.Races
-        }); 
-      },
+import axios from 'axios'
+
+export default {
+  data: () => ({
+    api_url: 'http://ergast.com/api/f1/',
+    api_schedule: 'current/',
+    schedule_info: []
+  }),
+
+  methods: {
+
+    go_to_raceinfo (races) {
+      this.$router.push({ path: 'schedule/' + races.round })
     }
-    
+
+  },
+
+  mounted () {
+    axios.get(this.api_url + this.api_schedule + this.$route.params.round + '.json').then((response) => {
+      this.schedule_info = response.data.MRData.RaceTable.Races
+    })
+  }
+}
+
 </script>
