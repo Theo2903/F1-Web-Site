@@ -1,32 +1,22 @@
 <template>
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/drivers">Drivers</router-link> |
-    <router-link to="/schedule">Schedule</router-link> |
-    <router-link to="/team">Team</router-link>
-  </nav> -->
-  <router-view/>
+  <NavBar/>
+  <div class="flex top-0 justify-end m-2 fixed bg-transparent text-white w-full pr-10 pt-2">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
 </template>
 
+<script>
+import NavBar from '@/components/NavbarComp.vue'
+
+export default {
+  components: {
+    NavBar
+  }
+}
+
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+@import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
