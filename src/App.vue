@@ -1,24 +1,27 @@
 <template>
-  <NavBar/>
-  <div class="flex top-0 justify-end m-2 fixed text-white w-full pr-10 pt-2">
-    <i @click="open_nav()" class="fas fa-bars fa-2x"></i>
-  </div>
-  <div class="flex top-0 justify-center m-2 fixed text-white w-full pr-10 pt-2">
-    <img class="h-8 w-18" src="@/assets/formula-1-logo.png" alt="">
-  </div>
+    <SideBar/>
+  
+  <router-view/>
 </template>
 
 <script>
-import NavBar from '@/components/SideBar.vue'
+import SideBar from '@/components/SideBar.vue'
 
 export default {
 
   components: {
-    NavBar
+    SideBar
   },
+
+
+  data:()=>({
+    is_sidebar_open: false
+  }),
+
   methods: {
     open_nav () {
-      console.log('gniaaa')
+      console.log('test')
+      console.log(this.is_sidebar_open)
     }
   }
 }
