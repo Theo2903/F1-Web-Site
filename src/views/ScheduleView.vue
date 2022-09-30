@@ -1,6 +1,6 @@
 <template>
   <div class="schedule">
-    <div v-for="races in schedules_list" :key="races.id">
+    <div class="flex justify-center mt-16" v-for="races in schedules_list" :key="races.id">
       <a @click="go_to_raceinfo(races)"> {{ races.raceName }} </a>
     </div>
   </div>
