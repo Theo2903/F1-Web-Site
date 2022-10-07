@@ -5,7 +5,7 @@
   <div v-if="is_sidebar_open == false " class="flex top-0 justify-start m-6 fixed text-black w-full pr-12 pt-2">
       <i @mouseover="is_sidebar_open = true" class="fas fa-bars fa-2x"></i>
   </div>
-  <aside v-if="is_sidebar_open == true">
+  <aside id="view" v-if="is_sidebar_open == true">
       <div class="flex">
         <!-- <router-link to="/"> -->
           <img class="ml-6 mt-6 h-8 w-18" src="@/assets/formula-1-logo.png" alt="">

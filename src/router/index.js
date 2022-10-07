@@ -11,10 +11,6 @@ const routes = [
     name: 'schedule',
     component: () => import('../views/ScheduleView.vue')
   }, {
-    path: '/schedule/:round',
-    name: 'scheduleInfo',
-    component: () => import('../views/ScheduleInfoView.vue')
-  }, {
     path: '/drivers',
     name: 'drivers',
     component: () => import('../views/StandingView.vue')
