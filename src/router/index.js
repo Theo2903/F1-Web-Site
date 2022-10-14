@@ -7,10 +7,6 @@ const routes = [
     name: 'home',
     component: () => import('../views/HomeView.vue')
   }, {
-    path: '/schedule',
-    name: 'schedule',
-    component: () => import('../views/ScheduleView.vue')
-  }, {
     path: '/drivers',
     name: 'drivers',
     component: () => import('../views/StandingView.vue')
