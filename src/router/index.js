@@ -11,7 +11,7 @@ const routes = [
     name: 'drivers',
     component: () => import('../views/StandingView.vue')
   }, {
-    path: '/team',
+    path: '/teams',
     name: 'team',
     component: () => import('../views/TeamView.vue')
   },
