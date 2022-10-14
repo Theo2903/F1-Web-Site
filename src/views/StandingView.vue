@@ -1,7 +1,7 @@
 <template>
   <div class="standing">
     {{ standing_pilotes_list.season }}
-    <div v-for="driver in standing_pilotes_list.DriverStandings" :key="driver.id">
+    <div class="flex justify-center mt-8" v-for="driver in standing_pilotes_list.DriverStandings" :key="driver.id">
         {{ driver.position }}
         {{ driver.Driver.givenName }}
         {{ driver.Driver.familyName }}
