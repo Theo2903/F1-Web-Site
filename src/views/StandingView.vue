@@ -17,7 +17,7 @@ export default {
 
   data: () => ({
     api_url: 'http://ergast.com/api/f1/',
-    api_standing: 'current/driverStandings.json',
+    api_standing: '2022/driverStandings.json',
     standing_pilotes_list: []
   }),
   mounted () {
