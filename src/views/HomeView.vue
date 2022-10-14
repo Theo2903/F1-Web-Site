@@ -3,12 +3,11 @@
       <source src="../assets/F12022Opening.mp4" />
     </video>
     <div class="absolute fixed bottom-0 right-0 min-w-full min-h-full ">
-      <!-- <img src="@/assets/formula-1-logo.png" alt=""> -->
       <NavBar/>
     </div>
   <div>
-    <h1 class="flex justify-center font-bold text-6xl leading-normal mt-0 mb-2">Schedule of the 2022 Season</h1>
-    <CircuitSlide/>
+      <h1 class="flex justify-center font-bold text-5xl leading-normal mt-2 mb-2">Schedule of the 2022 Season</h1>
+      <CircuitSlide/>
   </div>
 </template>
 
@@ -25,18 +24,5 @@ export default {
     NavBar
   },
 
-  data: () => ({
-
-  }),
-
-  methods: {
-
-
-  },
-
-  mounted () {
-
-  }
 }
 </script>
-

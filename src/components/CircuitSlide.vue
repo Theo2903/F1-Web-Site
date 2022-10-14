@@ -2,7 +2,7 @@
     <div class="schedule">
       <p class="hidden">{{ race_id }}</p>
       <div>
-        <vueper-slides class="mt-8 p-20" fixed-height="400px" :visible-slides="4" slide-multiple :gap="2" :slide-ratio="1 / 4" :dragging-distance="700" :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
+        <vueper-slides class="mt-8 p-20" fixed-height="400px" :visible-slides="3" slide-multiple :gap="2" :slide-ratio="1 / 4" :dragging-distance="700" :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
           <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" @click="show_race_informations(slide)">
           </vueper-slide>
         </vueper-slides>
