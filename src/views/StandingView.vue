@@ -2,7 +2,7 @@
   <div class="standing">
     <div v-for="driver in standing_pilotes_list.DriverStandings" :key="driver.id">
       <div class=" ">
-        <div class="flex">
+        <div class="grid grid-cols-4 gap-2">
             <img v-if='driver.position == 1' src='@/assets/Driver/Max_Verstappen_Driver.png'>
             <img v-if='driver.position == 2' src='@/assets/Driver/Sergio_Perez_Driver.png'>
             <img v-if='driver.position == 3' src='@/assets/Driver/Charles_Leclerc_Driver.png'>
@@ -26,11 +26,11 @@
             <img v-if='driver.position == 21' src='@/assets/Driver/Nyck_De_Vries_Driver.png'>
             <img v-if='driver.position == 22' src='@/assets/Driver/Nico_Hulkenberg_Driver.png'>
           </div>
-          <!-- {{ driver.position }}
+          {{ driver.position }}
           {{ driver.Driver.givenName }}
           {{ driver.Driver.familyName }}
           {{ driver.points}}
-          {{ driver.Constructors[0].name }} -->
+          {{ driver.Constructors[0].name }}
       </div>
     </div>
   </div>
