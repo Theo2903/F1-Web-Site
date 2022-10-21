@@ -11,6 +11,7 @@
     <div class="pt-24 flex justify-center ">
       <div v-for="race in schedule_info" :key="race.id">
         <a class="font-bold text-3xl">{{ race.raceName }}</a>
+        <!-- Put Id to every race -->
         <div class="flex p-4">
           <img v-if="race_id == 1" src="@/assets/Circuit/CircuitInfo/Bahrain_info_circuit.png">
           <img v-if="race_id == 2" src="@/assets/Circuit/CircuitInfo/Jeddah_info_circuit.png">
@@ -76,7 +77,7 @@
       VueperSlides,
       VueperSlide
     },
-  
+    //Race and schedule info
     data: () => ({
       api_url: 'http://ergast.com/api/f1/',
       api_schedule: 'current.json',

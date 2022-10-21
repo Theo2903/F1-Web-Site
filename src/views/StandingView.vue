@@ -3,6 +3,7 @@
     <div v-for="driver in standing_pilotes_list.DriverStandings" :key="driver.id">
       <div class=" ">
         <div class="grid grid-cols-4 gap-2">
+          <!-- Drivers Place -->
             <img v-if='driver.position == 1' src='@/assets/Driver/Max_Verstappen_Driver.png'>
             <img v-if='driver.position == 2' src='@/assets/Driver/Sergio_Perez_Driver.png'>
             <img v-if='driver.position == 3' src='@/assets/Driver/Charles_Leclerc_Driver.png'>
@@ -40,7 +41,7 @@
 import axios from 'axios'
 
 export default {
-
+//Catch every driver place
   data: () => ({
     api_url: 'http://ergast.com/api/f1/',
     api_standing: '2022/driverStandings.json',

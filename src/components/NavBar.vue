@@ -1,6 +1,7 @@
 <template>
   <div class="flex top-0 justify-center m-6 fixed text-white w-full pr-12 pt-2">
     <div>
+      <!-- Differents Pages-->
       <router-link to="/drivers">
         <p class="">Drivers</p>
       </router-link>

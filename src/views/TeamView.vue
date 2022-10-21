@@ -10,7 +10,7 @@
 import axios from 'axios'
 
 export default {
-
+//Catch constructors place info
   data: () => ({
     api_url: 'http://ergast.com/api/f1/',
     api_standing: '2022/constructors.json',

@@ -1,4 +1,5 @@
 <template>
+  <!-- Intro Video -->
     <video id="myVideo" autoplay loop muted class="brightness-50 right-0 bottom-0 min-w-full min-h-full" >
       <source src="../assets/F12022Opening.mp4" />
     </video>
